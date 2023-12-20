@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="box">
+    <!--* rating screen -->
+    <div class="rating" id="rating">
+      <!-- star -->
+      <div class="star">
+        <img src="images/icon-star.svg" alt="star icon">
+      </div>
+      <!-- mid content -->
+      <div class="teste">
+        <!-- texts -->
+        <h1 class="title">How did we do?</h1>
+        <p class="main-text">
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+        <!-- numbers -->
+        <ul class="numbers">
+          <li class="btn-rating">1</li>
+          <li class="btn-rating">2</li>
+          <li class="btn-rating">3</li>
+          <li class="btn-rating">4</li>
+          <li class="btn-rating">5</li>
+        </ul>
+      </div>
+      <!-- button -->
+      <a href="#" class="submit-btn" id="submit-btn">Submit</a>
+    </div>
+
+    <!--* thank you screen -->
+    <div class="thanks hide" id="thanks">
+      <img src="images/illustration-thank-you.svg" alt="thanks image" class="thanks-img">
+      <!-- show selected number -->
+      <div class="selected">
+        <p>You selected <span id="change"></span> out of 5</p>
+      </div>
+      <!-- texts -->
+      <h1 class="title">Thank you!</h1>
+      <p class="second-text">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don't hesitate to get in touch!
+      </p>
+    </div>
+  </section>
+
+  <!--* copywrite -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/MarcusFrancisquini">Marcus Vinicius</a>.
+  </div>
+
+  <!-- javascript -->
+  <script src="script.js"></script>
+</body>
+</html>
